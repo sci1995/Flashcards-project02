@@ -3,7 +3,7 @@
 
 Submitted by: Aisha Beltagy
 
-This web app: **insert description**
+This web app: The Science Facts Flashcard App is an interactive tool that helps users test and expand their knowledge of science. Each card presents a question or fact with relevant images, allowing users to easily flip to reveal answers. The app features a clear title, description, and total card count, along with a "Next Card" button for smooth navigation, making learning engaging and user-friendly.
 
 Time spent: 9
 
