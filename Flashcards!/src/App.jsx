@@ -112,11 +112,19 @@ const App = () => {
     setIsFlipped(!isFlipped);
   };
 
-  const handleNextCard = () => {
-    setIsFlipped(false); 
-    setCurrentCardIndex((prevIndex) => (prevIndex + 1) % flashcards.length); 
+  const getRandomIndex = () => {
+    return Math.floor(Math.random() * flashcards.length);
   };
 
+  const handleNextCard = () => {
+    setIsFlipped(false); 
+    setCurrentCardIndex(getRandomIndex()); 
+  };
+
+  // const handleNextCard = () => {
+  //   setIsFlipped(false); 
+  //   setCurrentCardIndex((prevIndex) => (prevIndex + 1) % flashcards.length); 
+  // };
   return (
     <div className="App">
       <div className="header">
