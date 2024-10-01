@@ -5,7 +5,7 @@ Submitted by: Aisha Beltagy
 
 This web app: **insert description**
 
-Time spent: 10
+Time spent: 9
 
 ## Required Features
 
