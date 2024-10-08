@@ -63,7 +63,7 @@ const App = () => {
     },
     { 
         question: "What is the pH level of pure water?", 
-        answer: "7 (neutral)💧", 
+        answer: "7 💧", 
         image: water,
         subject: "Chemistry"
     },
@@ -116,15 +116,20 @@ const App = () => {
     return Math.floor(Math.random() * flashcards.length);
   };
 
-  const handleNextCard = () => {
+  const ShuffleCard = () => {
     setIsFlipped(false); 
     setCurrentCardIndex(getRandomIndex()); 
   };
 
-  // const handleNextCard = () => {
-  //   setIsFlipped(false); 
-  //   setCurrentCardIndex((prevIndex) => (prevIndex + 1) % flashcards.length); 
-  // };
+  const handleNextCard = () => {
+    setIsFlipped(false); 
+    setCurrentCardIndex((prevIndex) => (prevIndex + 1) % flashcards.length); 
+  };
+  const handlePreviousCard = () => {
+    setIsFlipped(false); 
+    setCurrentCardIndex((prevIndex) => (prevIndex - 1 + flashcards.length) % flashcards.length); 
+ };
+  
   return (
     <div className="App">
       <div className="header">
@@ -144,7 +149,11 @@ const App = () => {
         />
         
       </div>
-      <button onClick={handleNextCard}>Next Card</button>
+      <div class="button-container">
+      <button onClick={handlePreviousCard}>⬅️</button>
+      <button onClick={handleNextCard}>➡️</button>
+      <button onClick={ShuffleCard}>Shuffle Cards </button>
+      </div>
     </div>
   );
 };
