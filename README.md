@@ -1,6 +1,6 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - Flashcards! Part 2
 
-Submitted by: **Your Name Here**
+Submitted by: Aisha Beltagy
 
 This web app: **insert description**
 
